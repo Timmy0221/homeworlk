@@ -1,0 +1,111 @@
+/*輸不起就別玩*/
+body {
+    background-image: url("./2.gif");
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.button1 {
+    position: fixed; /* 改為 fixed */
+    background-color: rgba(0, 0, 0, 0.3); /* 初始淡色背景 */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    bottom: 20px; /* 固定在底部 */
+    left: calc(10vw - 100px); /* 調整為視窗寬度的 10% */
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 1000;
+    border: 2px solid gray;
+    transition: border-color 0.3s;
+    transition: background-color 0.3s; /* 平滑過渡效果 */
+}
+
+.button2 {
+    position: fixed; /* 改為 fixed */
+    background-color: rgb(0, 0, 0, 0.3); /* 初始淡色背景 */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    bottom: 20px; /* 固定在底部 */
+    right: calc(10vw - 100px); /* 調整為視窗寬度的 90% */
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 1000;
+    border: 2px solid gray;
+    transition: border-color 0.3s;
+    transition: background-color 0.3s; /* 平滑過渡效果 */
+}
+
+@keyframes button-rgb {
+    0% { background-color:  rgb(0, 0, 0); }
+    10% { background-color: orangered; }
+    20% { background-color: rgb(0, 0, 0); }
+    30% { background-color: rgb(111, 0, 255); }
+    40% { background-color: rgb(0, 0, 0); }
+    50% { background-color: rgb(0, 0, 255); }
+    60% { background-color: rgb(0, 0, 0); }
+    70% { background-color: rgb(0, 221, 255); }
+    80% { background-color: rgb(0, 0, 0); }
+    90% { background-color: rgb(255, 200, 0); }
+    100% { background-color:rgb(0, 0, 0); }
+    0% { border-color:  red;}
+    10% { border-color: rgb(0, 0, 0); }
+    20% { border-color: red; }
+    30% { border-color: rgb(0, 0, 0); }
+    40% { border-color: red; }
+    50% { border-color: rgb(0, 0, 0); }
+    60% { border-color: red; }
+    70% { border-color: rgb(0, 0, 0); }
+    80% { border-color: red; }
+    90% { border-color: rgb(0, 0, 0); }
+    100% { border-color: red; }
+}
+.button1:hover, .button2:hover {
+    background-color: rgb(0, 0, 0); /* 滑鼠移上去時恢復深色背景 */
+    animation: button-rgb 7s infinite;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.active {
+    background-color: #2196F3;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color:#cccc;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 80vh;
+        }
+        div{
+            width:  360px;
+            height: 360px;
+            border:1px solid black;
+            background-size: contain;
+            background: rgb(0, 0, 0) round url(./4.jpg);
+            background-position: right top;
+            opacity: 1;
+            position: relative;
+        }
+        div::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 1px solid transparent;
+            border-right: 350px solid transparent;
+            border-bottom: 200px solid rgb(255, 0, 0,0.5);
+            top: 160px;
+            left: 0px;
+        }
+        div::after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-left: 150px solid transparent;
+            border-bottom: 260px solid rgba(0, 16, 240, 0.5);
+            top: 101px;
+            left: 211px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="shape">
+        <pre><h3>                 這是作業2</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 style="color: rgb(255, 247, 0);">         這是作業2</h1>
+        </pre>
+    </div>
+</body>
+</html>

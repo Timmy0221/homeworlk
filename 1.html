@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{color: red;}
+         h1{color: blue;}
+        h3{color:orange;}
+        h2 + span {color: red;}    /* h1 相鄰的第一個 span 變成紅色文字 */
+        h2 > span {color: blue; }  /* h1 的子元素 span 變成藍色文字 */
+         /*元素選擇器*/
+         body{background-color:#cccc;}
+        /* id 選擇器 */
+        #title-1{text-decoration: underline;}
+        /* class 選擇器 */
+        .title{margin-top:10px;margin-bottom:10px;font-weight: bold;font-size: 24px;}
+        .content{width:400px;padding:10px;border:1px dashed blue;color: gray}
+        .keyword{color:red}
+    </style>
+</head>
+<body>
+    <h1>選擇器測試</h1>
+    <h3>吃我大雞雞</h3>
+    <hr>
+    <h2>選擇器測試<span>我是藍色</span></h2>
+    <span>hello world!!</span>
+    <hr>
+    <div id="title-1" class="title">文章第一段落的標題</div>
+    <div class="content">
+        今天的<span class="keyword">天氣</span>真是不錯
+    </div>
+    <hr>
+    <div class="title">文章第一段落的標題</div>
+    <div class="content">
+        今天的<span class="keyword">天氣</span>真是不錯
+    </div>
+</body>
+</html>
