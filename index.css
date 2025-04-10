@@ -19,7 +19,7 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 1.2vw; /* 縮小字體大小 */
-    font-weight: 1000;
+    font-weight: 500;
     margin: 10px 0; /* 增加垂直間距 */
     cursor: pointer;
     border-radius: 40px;
