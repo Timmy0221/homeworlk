@@ -48,7 +48,7 @@ div.container{
     border-radius: 20px;
     background-color: #fff;
     margin: 8vh auto; /* 增加垂直邊距，讓容器更靠視窗中間 */
-    width: 45vw; /* 增加容器寬度 */
+    width: 45vh; /* 增加容器寬度 */
     height: 75vh; /* 增加容器高度 */
     justify-content: center;
     align-items: center;
