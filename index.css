@@ -72,7 +72,7 @@ div.container{
         height: 77vh; /* 在小螢幕上增加容器高度 */
     }
     }
-h1, h6 {
+h3 {
     text-align: center;
     margin: 10px 0; /* 增加文字與按鈕的間距 */
 }
