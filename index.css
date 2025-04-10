@@ -75,6 +75,7 @@ div.container{
 h1{
     text-align: center;
     margin: 10px 0; /* 增加文字與按鈕的間距 */
+    text-decoration: underline;
 }
 
 
